@@ -1,0 +1,40 @@
+@media screen and (min-width:900px) {
+    .product-nav {
+        flex-direction: row;
+        max-height: 100px;
+    }
+    .nav-button {
+        display: none;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10em;
+        margin-right: 10em;
+}
+
+    .card img {
+        aspect-ratio: 6/4;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+
+
+    }
+
+    .bottom-banner {
+        grid-column: span 3;
+        min-height: 16em;
+    }
+
+
+    .footer-nav{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+
+    .logo { 
+
+        width: 50px;
+        margin: 10px;
+    }
+}
