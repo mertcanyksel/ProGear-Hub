@@ -3,6 +3,8 @@
                 <a href="about.html">About us</a>
                 <a href="customer.html">Customer Service</a>
                 <a href="policies.html">Policies</a>    
+                <a href="contact.html">Contact us</a>    
+
             </nav>
             <nav class="social-nav">
                 <a href="https://www.facebook.com">
