@@ -32,7 +32,24 @@
             <?php 
             // create card from products from database
             foreach( $products as $item){
-                echo "<div class='card'></div>"
+                //echo $item['image'];
+                $image = $item['image'];
+                $id = $item['id'];
+                $name = $item['name'];
+                $price = $item['price'];
+                // card start
+                echo "<div class='card'>";
+                //product image
+                echo "<img src='products/$image'>";
+                //card content
+                echo "<div class='card-content'>";
+                echo "<h4 class='card-title'>$name</h4>";
+                echo "<p class='price'>$price</p>";
+                // card button
+                echo "<a href='#' class='card-button'>Add to cart</a>";
+                echo "</div>";
+                echo "</div>";
+                // echo "<div class='card'></div>";
             }
             ?>    
 

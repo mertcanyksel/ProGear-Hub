@@ -35,9 +35,9 @@
 
 
             <nav class="product-nav">
-                <a href="men.html">Men</a>
+                <a href="men.php">Men</a>
                 <a href="women.php">Women</a>
-                <a href="kids.html">Kids</a>
+                <a href="kids.php">Kids</a>
                 <a href="accessories.html">Accessories</a>
             </nav>
         </header>

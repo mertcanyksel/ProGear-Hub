@@ -138,6 +138,18 @@ body {
     background-repeat: no-repeat;
 }
 
+.men-banner {
+    background-color: var(--steel-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-image: url("banner-images/pexels-7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .banner-text {
     background-color: var(--translucent-dark);
     padding: 0.5em;
