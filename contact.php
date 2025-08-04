@@ -2,6 +2,7 @@
 include "src/database.php";
 
 //IF REQUEST METHOD IS POST,A FORM IS BEING SUBMITTED
+$submitting=false;
 if( $_SERVER["REQUEST_METHOD"] = "POST") {
     //process post data
     $name = $_POST["name"];
@@ -10,11 +11,17 @@ if( $_SERVER["REQUEST_METHOD"] = "POST") {
     $message = $_POST["message"];
     $date = date('Y-m-d H:i:s');
 
-    $query = "INSERT INTO contact_us (name,email,subject,message,submitted_at)
-    VALUES($name,$email,$subject,$message,$date) ";
+    $query = "
+    INSERT INTO contact_us 
+    (name,email,subject,message,submitted_at)
+    VALUES(?,?,?,?,?) ";
+
+    echo $query;
 
     $statement = $connection -> prepare($query);
+    $statement -> bind_param("sssss",$name,$email,$subject,$message,$date);
     $statement -> execute();
+    $submitting = true;
 }
 
 ?>
@@ -30,6 +37,11 @@ if( $_SERVER["REQUEST_METHOD"] = "POST") {
 
     <main class="container">
         <form id="contact-form" method="post" action="contact.php">
+            <?php
+            if( $submitting ==true){
+                echo "<p class='alert'>Thank you for contacting us</p>";
+            }
+            ?>
             <h3>Contact Us</h3>
             <label for="name">Your Name</label>
             <input maxlength="255" type="text" name="name" id="name" placeholder="Jane Smith">
