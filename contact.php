@@ -3,7 +3,7 @@ include "src/database.php";
 
 //IF REQUEST METHOD IS POST,A FORM IS BEING SUBMITTED
 $submitting=false;
-if( $_SERVER["REQUEST_METHOD"] = "POST") {
+if( $_SERVER["REQUEST_METHOD"] == "POST") {
     //process post data
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -16,7 +16,7 @@ if( $_SERVER["REQUEST_METHOD"] = "POST") {
     (name,email,subject,message,submitted_at)
     VALUES(?,?,?,?,?) ";
 
-    echo $query;
+    
 
     $statement = $connection -> prepare($query);
     $statement -> bind_param("sssss",$name,$email,$subject,$message,$date);
@@ -31,7 +31,7 @@ if( $_SERVER["REQUEST_METHOD"] = "POST") {
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include "include/head.php"; ?>
+<?php include "includes/head.php"; ?>
 <body>
     <?php include "includes/pageheader.php"; ?>    
 
@@ -58,7 +58,7 @@ if( $_SERVER["REQUEST_METHOD"] = "POST") {
         </form>
     </main>
 
-    <?php include "inludes/footer.php" ?>
+    <?php include "includes/footer.php"; ?>
 
 </body>
 

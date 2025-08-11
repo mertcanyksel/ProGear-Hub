@@ -13,10 +13,10 @@
         array_push( $products , $row);
     }
     ?>
-    <?php include "includes/head.php"; ?>    <!---28.07.2025-->
+    <?php include "includes/head.php"; ?>   
 
     <body>
-        <?php include "includes/pageheader.php"; ?>    <!---28.07.2025-->
+        <?php include "includes/pageheader.php"; ?>    
         <div class="men-banner">
             <div class="banner-text">
                 <h2>SALE</h2>
