@@ -93,7 +93,7 @@ body {
     flex-direction: column;  /*07 07 2025 vertical menu for mobile*/
     flex-wrap: wrap;
     min-width: 100%;
-    justify-content: center;   /* We put the product nav on the middle*/
+    /*justify-content: center;   We put the product nav on the middle*/
     max-height: 0px;
     overflow: hidden;
 
@@ -107,7 +107,7 @@ body {
 
 .product-nav a {
     color: var(--lightgrey);
-    font-family: "Press Start 2P", system-ui;
+    /*font-family: "Press Start 2P", system-ui;*/
     font-size: 1.2em;
     text-decoration: none;  /*If we don`t use text decoration it`s gonna be under line below the icon so we need to write that line */
     padding: 1em;
@@ -144,7 +144,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-image: url("banner-images/pexels-7.jpg");
+    background-image: url("banner-images/men-banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,7 +152,7 @@ body {
 
 .banner-text {
     background-color: var(--translucent-dark);
-    padding: 0.5em;
+    /*padding: 0.5em;*/
     color: var(--dark-purple);
     text-align: center;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .banner-text h2 {
-    font-size: 4em;
+    font-size: 1.5em;
 }
 
 .banner-text a{
@@ -196,7 +196,7 @@ body {
 }
 
 .card-content {
-    padding: 5em;
+    padding: 0.5em;
 }
 
 .card-button {

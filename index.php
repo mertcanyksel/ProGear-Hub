@@ -92,7 +92,7 @@
             </div>
 
         </main>
-        <?php include "inludes/footer.php" ?>
+        <?php include "includes/footer.php" ?>
 
     </body>
 

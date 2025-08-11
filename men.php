@@ -38,7 +38,7 @@
                 // card start
                 echo "<div class='card'>";
                 //product image
-                echo "<img src='products/men/$image'>";
+                echo "<img src='products/$image'>";
                 //card content
                 echo "<div class='card-content'>";
                 echo "<h4 class='card-title'>$name</h4>";
@@ -60,7 +60,7 @@
             </div>
 
         </main>
-        <?php include "inludes/footer.php" ?>
+        <?php include "includes/footer.php" ?>
 
     </body>
 
