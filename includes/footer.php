@@ -3,7 +3,7 @@
         <a href="about.html">About us</a>
         <a href="customer.html">Customer Service</a>
         <a href="policies.html">Policies</a>    
-        <a href="contact.html">Contact us</a>    
+        <a href="contact.php">Contact us</a>    
 
     </nav>
     <nav class="social-nav">

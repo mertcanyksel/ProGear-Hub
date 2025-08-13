@@ -1,9 +1,9 @@
 <?php
 include "src/database.php";
+// if request method is post, a form is being submitted
 
-//IF REQUEST METHOD IS POST,A FORM IS BEING SUBMITTED
-$submitting=false;
-if( $_SERVER["REQUEST_METHOD"] == "POST") {
+$submitting = false;
+if( $_SERVER["REQUEST_METHOD"] == "POST" ) {
     //process post data
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -14,16 +14,13 @@ if( $_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "
     INSERT INTO contact_us 
     (name,email,subject,message,submitted_at)
-    VALUES(?,?,?,?,?) ";
-
-    
+    VALUES(?,?,?,?,?)";
 
     $statement = $connection -> prepare($query);
     $statement -> bind_param("sssss",$name,$email,$subject,$message,$date);
     $statement -> execute();
     $submitting = true;
 }
-
 ?>
 
 
@@ -32,13 +29,14 @@ if( $_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 
 <?php include "includes/head.php"; ?>
-<body>
-    <?php include "includes/pageheader.php"; ?>    
 
+<body>
+    <?php include "includes/pageheader.php" ?>
+   
     <main class="container">
         <form id="contact-form" method="post" action="contact.php">
             <?php
-            if( $submitting ==true){
+            if( $submitting == true ) {
                 echo "<p class='alert'>Thank you for contacting us</p>";
             }
             ?>
@@ -48,7 +46,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="email">Your Email Address</label>
             <input maxlength="255" type="email" name="email" id="email" placeholder="you@example.com">
             <label for="subject">Message Subject</label>
-            <input maxlength="255" type="text" name="subject" id="subject" placeholder="Hey There">
+            <input maxlength="255" type="text" name="subject" id="subject" placeholder="Hey there">
             <label for="message">Message</label>
             <textarea rows="5" cols="50" name="message" id="message" placeholder="Your message"></textarea>
             <div class="buttons">
@@ -57,9 +55,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </form>
     </main>
-
     <?php include "includes/footer.php"; ?>
-
 </body>
 
 </html>

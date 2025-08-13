@@ -4,7 +4,7 @@
             </button>
 
 
-            <a href="\">    <!--Home page is not working -->
+            <a href="\">   
                 <img src="website-pics/S.png" class="logo">
             </a>
 
