@@ -2,7 +2,7 @@
 <html lang="en">
 
     <?php include "src/database.php"; 
-    $query="SELECT id,name,price,description,image FROM Product_new_v2 WHERE category= 'women'";
+    $query="SELECT id,name,price,description,image FROM Product WHERE category= 'women'";
     // prepare statement
     $statement = $connection -> prepare($query);
     $statement -> execute();
@@ -40,7 +40,7 @@
                 // card start
                 echo "<div class='card'>";
                 //product image
-                echo "<img src='products/$image'>";
+                echo "<img src='products/women/$image'>";
                 //card content
                 echo "<div class='card-content'>";
                 echo "<h4 class='card-title'>$name</h4>";
