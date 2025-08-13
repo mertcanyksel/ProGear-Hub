@@ -3,9 +3,7 @@
     <?php include "includes/head.php"; ?>    <!---28.07.2025-->
     <body>
         
-        <?php include "includes/pageheader.php"; ?>    <!---28.07.2025-->
-
-
+        <?php include "includes/pageheader.php"; ?> 
         <div class="home-banner">
             <div class="banner-text">
                 <h2>SALE</h2>
@@ -13,8 +11,6 @@
                 <a href="sale.html">Shop</a>
             </div>
         </div>
-      
-        
         <main class="container">
             <div class="card">
                 <img src="products/pexels-1.jpg" alt="Nike Dunk Low Retro 'Panda'">
@@ -26,7 +22,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="card">
                 <img src="products/pexels-2.jpg" alt="ASICS Men's Patriot 13 Running Shoes Black">
                 <div class="cart-content">
@@ -37,8 +32,6 @@
                     </a>
                 </div>
             </div>
-
-
             <div class="card">
                 <img src="products/pexels-3.jpg" alt="Nike Vomero 18 Men's Road Running Shoes - Summit White/Coconut Milk/Coconut Milk/Black">
                 <div class="cart-content">
@@ -49,7 +42,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="card">
                 <img src="products/pexels-4.jpg" alt="Nike ZoomX Vaporfly Next">
                 <div class="cart-content">
@@ -60,7 +52,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="card">
                 <img src="products/pexels-5.jpg" alt="The New Balance FuelCell SuperComp Trainer v2 sits sideways on a slab of concrete.">
                 <div class="cart-content">
@@ -71,7 +62,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="card">
                 <img src="products/pexels-6.jpg" alt="HOKA Torrent 4 Trail Running Shoes">
                 <div class="cart-content">
@@ -82,7 +72,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="bottom-banner">
                 <div class="banner-text">
                     <h2>Clearance Sale</h2>
@@ -92,7 +81,7 @@
             </div>
 
         </main>
-        <?php include "includes/footer.php" ?>
+        <?php include "includes/footer.php"; ?>
 
     </body>
 
