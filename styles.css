@@ -272,21 +272,21 @@ body {
 #contact-form label{
     display: block;
 }
-
-#contact-form input, #contact-form textarea {
+#contact-form input, 
+#contact-form textarea,
+#order-form input,
+#order-form textarea {
     display: block;
     margin-bottom: 1em;
     padding: 0.5em;
-    width: 100%;
+    width:100%;
     border: solid 1px #5b5b5b;
     border-radius: 0.3em;
     box-sizing: border-box;
 }
-
-#contact-form {
+#contact-form, #order-form {
     grid-column-start: 2;
 }
-
 .buttons {
     display: flex;
     justify-content: space-between;
