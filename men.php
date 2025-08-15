@@ -44,7 +44,7 @@
                 echo "<h4 class='card-title'>$name</h4>";
                 echo "<p class='price'>$price</p>";
                 // card button
-                echo "<a href='#' class='card-button'>Add to cart</a>";
+                echo "<a href='order.php?product_id=$id' class='card-button'>Order item</a>";
                 echo "</div>";
                 echo "</div>";
                 // echo "<div class='card'></div>";

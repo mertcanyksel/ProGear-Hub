@@ -273,7 +273,7 @@ body {
     display: block;
 }
 
-#contact-form input #contact-form textarea {
+#contact-form input, #contact-form textarea {
     display: block;
     margin-bottom: 1em;
     padding: 0.5em;
