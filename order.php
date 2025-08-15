@@ -1,7 +1,5 @@
 <?php
-// include the database connection
 include "src/database.php";
-
 // if product id exists in the URL
 if( $_GET['product_id']) {
     $id = $_GET['product_id'];
@@ -29,7 +27,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     $date = date('Y-m-d H:i:s');
 
     $query = "
-    INSERT INTO orders 
+    INSERT INTO contact_us 
     (customer_name,
     email,
     product_name,
@@ -45,6 +43,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +54,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php include "includes/pageheader.php" ?>
    
     <main class="container">
-        <form id="order-form" method="post" action="order.php">
+        <form id="contact-form" method="post" action="order.php">
             <?php
             if( $submitting == true ) {
                 echo "<p class='alert'>Thank you for your order</p>";
